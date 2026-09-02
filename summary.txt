@@ -1,0 +1,6 @@
+Keypoint Detection Summary for: sample_images/synthetic_scene.png
+Image size: 900x650
+--------------------------------------------------
+Harris   | keypoints:    493 | runtime:    70.18 ms | descriptor: None
+ORB      | keypoints:    500 | runtime:     8.09 ms | descriptor: (500, 32)
+SIFT     | keypoints:    955 | runtime:   668.02 ms | descriptor: (955, 128)
