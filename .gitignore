@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Generated results — keep the repo light; regenerate with `python3 main.py`
+output/*
+!output/.gitkeep
+
+# Keep the synthetic demo image out of git history churn if regenerated,
+# but track it once so the repo has a working example without running anything.
