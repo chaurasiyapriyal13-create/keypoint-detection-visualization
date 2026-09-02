@@ -17,11 +17,28 @@ keypoint_system/
 ├── visualize.py           # Drawing: annotated images, heatmap, side-by-side panel, bar chart
 ├── make_sample_image.py   # Generates a synthetic test image (checkerboard, shapes, text, flat regions)
 ├── main.py                # CLI entry point
+├── streamlit_app.py       # Web UI (upload an image, tune params, view results in the browser)
 ├── sample_images/         # Generated / user-supplied input images
 └── output/                # Results (created on run)
 ```
 
-## Usage
+## Web app (Streamlit)
+
+Upload an image, toggle Harris / ORB / SIFT on or off, tune parameters with
+sliders, and view annotated results, the Harris heatmap, and a comparison
+panel — all in the browser, no CLI needed.
+
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+This opens at `http://localhost:8501`. To make it a live shareable link with
+no install required for viewers, deploy it for free at
+[share.streamlit.io](https://share.streamlit.io) — connect this GitHub repo,
+point it at `streamlit_app.py`, and deploy.
+
+## Usage (command line)
 
 ```bash
 # Run on the built-in synthetic demo image
